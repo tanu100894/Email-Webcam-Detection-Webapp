@@ -70,7 +70,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-If you don't have a **`requirements.txt`**, here are the minimum dependencies:
+If you don't have a `requirements.txt`, here are the minimum dependencies:
 
 ```bash
 pip install opencv-python python-dotenv
@@ -80,7 +80,7 @@ pip install opencv-python python-dotenv
 
 ## 🔐 Environment Variables
 
-Create a **`.env`** file in the root directory with the following contents:
+Create a `.env` file in the root directory with the following contents:
 
 ```env
 sender_email=your_email@gmail.com
@@ -98,7 +98,7 @@ Run the motion detector:
 ```bash
 python main.py
 ```
-💡 Press **`q`** to stop the webcam feed.
+💡 Press `q` to stop the webcam feed.
 
 ---
 
@@ -109,20 +109,20 @@ You can test email sending directly using:
 ```bash
 python emailing.py
 ```
-💡 This will send a predefined image (make sure the image exists at **`images/19.png`**).
+💡 This will send a predefined image (make sure the image exists at `images/19.png`).
 
 ---
 
 ## 📂 Output
 
-- Detected motion images are saved in the **`images/`** directory temporarily.
+- Detected motion images are saved in the `images/` directory temporarily.
 - After the email is sent, the folder is cleaned up automatically using a background thread.
 
 ---
 
 ## 🧼 Cleaning
 
-Cleanup of the **`images/`** folder is automatically handled after motion is detected and the image is sent.
+Cleanup of the `images/` folder is automatically handled after motion is detected and the image is sent.
 
 You do not need to manually delete these files.
 
